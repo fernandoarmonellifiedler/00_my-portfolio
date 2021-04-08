@@ -1,13 +1,25 @@
 function Lateral() {
   return (
     <div className='lateral'>
-      <ul>
-        <li>Presentación</li>
-        <li>Proyectos</li>
-        <li>React</li>
-        <li>JS</li>
-        <li>web Dev</li>
-        <li>Contactos</li>
+      <ul className='lateral-ul'>
+        <li className='lateral-li selected'>
+          <a className='lateral-link'>Presentación</a>
+        </li>
+        <li className='lateral-li'>
+          <a className='lateral-link'>Proyectos</a>
+        </li>
+        <li className='lateral-li'>
+          <a className='lateral-link'>React</a>
+        </li>
+        <li className='lateral-li'>
+          <a className='lateral-link'>JS</a>
+        </li>
+        <li className='lateral-li'>
+          <a className='lateral-link'>web Dev</a>
+        </li>
+        <li className='lateral-li'>
+          <a className='lateral-link'>Contactos</a>
+        </li>
       </ul>
     </div>
   );

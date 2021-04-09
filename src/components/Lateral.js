@@ -1,26 +1,35 @@
-function Lateral() {
+import React from 'react';
+
+function Lateral({ categorias, filterItems }) {
   return (
     <div className='lateral'>
-      <ul className='lateral-ul'>
-        <li className='lateral-li selected'>
-          <a className='lateral-link'>Presentación</a>
+      {categorias.map((categoria, index) => {
+        return (
+          <button type='button' className='lateral-button' key={index} onClick={() => filterItems(categoria)}>
+            {categoria}
+          </button>
+        );
+      })}
+      {/* <button className='lateral-button' onClick={() => filterItems('react')}>
+        react
+      </button> */}
+      {/* <ul className='lateral-ul'>
+        <li className='lateral-li selected' key='presentacion'>
+          <button className='lateral-link'>Presentación</button>
         </li>
-        <li className='lateral-li'>
-          <a className='lateral-link'>Proyectos</a>
+        <li className='lateral-li' key='react'>
+          <button className='lateral-link'>React</button>
         </li>
-        <li className='lateral-li'>
-          <a className='lateral-link'>React</a>
+        <li className='lateral-li' key='js'>
+          <button className='lateral-link'>JS</button>
         </li>
-        <li className='lateral-li'>
-          <a className='lateral-link'>JS</a>
+        <li className='lateral-li' key='web-dev'>
+          <button className='lateral-link'>web Development</button>
         </li>
-        <li className='lateral-li'>
-          <a className='lateral-link'>web Dev</a>
+        <li className='lateral-li' key='contactos'>
+          <button className='lateral-link'>Contactos</button>
         </li>
-        <li className='lateral-li'>
-          <a className='lateral-link'>Contactos</a>
-        </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }

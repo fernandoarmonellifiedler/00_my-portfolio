@@ -1,19 +1,65 @@
 import React, { useState, useEffect } from 'react';
-
+import projectsList from './data';
 import Header from './components/Header';
 import Lateral from './components/Lateral';
 import Display from './components/Display';
 import Footer from './components/Footer';
 
+const allCategorias = [
+  'all',
+  ...new Set(projectsList.map((item) => item.categoria)),
+];
+
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [list, setList] = useState(projectsList);
+  const [categorias, setCategorias] = useState(allCategorias);
+  const [value, setValue] = useState(0);
+  // const [cat, setCat] = useState(1);
+
+  const filterItems = (categoria) => {
+    if (categoria === 'all') {
+      setList(projectsList);
+      return;
+    }
+    const newItems = list.filter((item) => item.categoria === categoria);
+    setList(newItems);
+  };
+  // fetch lista
+  // const fetchList = () => {
+  //   setTimeout(() => {
+  //     setList(projectsList);
+  //     setLoading(false);
+  //   }, 500);
+  // };
+  // useEffect de fetch
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+  // console.log(list);
+  if (loading) {
+    return (
+      <section className='loading'>
+        <h1>loading...</h1>
+      </section>
+    );
+  }
+
+  // destructure list
+  // const {  } = list[value];
+
   return (
     <div className='container'>
-      <Header/>
+      <Header />
       <div className='main'>
-        <Lateral/>
-        <Display/>
+        <Lateral filterItems={filterItems} categorias={categorias} />
+        <div className='display'>
+          <Display proyectos={list} />
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

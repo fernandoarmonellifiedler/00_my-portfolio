@@ -1,4 +1,4 @@
-const data = [
+export default [
   {
     id: 1,
     img:
@@ -99,6 +99,11 @@ const data = [
     categoria: 'react',
     categoria_id: 1
   },
+  // {
+  //   id: 7,
+  //   img:
+  //     'https://raw.githubusercontent.com/fernandoarmonellifiedler/personal-projects/master/react/my-projects-netlify/my-app/src/images/img_7.png',
+  //   name: 'react-array-in-component',
+  //   link: 'https://react-array-in-component.netlify.app',
+  // },
 ];
-
-export default data;

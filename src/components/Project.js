@@ -1,8 +1,8 @@
-const List = ({ projects }) => {
+const List = ({ data }) => {
   return (
     <>
       <section className='projects'>
-        {projects.map((project) => {
+        {data.map((project) => {
           const { id, title, img, link } = project;
 
           return (

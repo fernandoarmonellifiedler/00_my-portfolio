@@ -1,10 +1,10 @@
 import List from './Project';
 
-const Section = ({ projects }) => {
+const Section = ({ data }) => {
   return (
       <section className='container'>
         <h2>my projects</h2>
-        <List projects={projects} />
+        <List data={data} />
       </section>
   );
 };

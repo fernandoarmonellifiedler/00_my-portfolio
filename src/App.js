@@ -28,19 +28,12 @@ function App() {
             </li>
           </ul>
         </nav>
-        <section className='intro'>
-          <h1>
-            Hi, I´m <strong>Fernando Armonelli Fiedler</strong>
-          </h1>
-          <p>front-end dev</p>
-          <img className='item-img' src={photo} alt="my-photo"/>
-        </section>
         
       </header>
 
       <main>
         {/* <Aside data={data} /> */}
-        <aside>
+        {/* <aside>
           <h3>Categories</h3>
           <ul>
             <li>
@@ -57,7 +50,7 @@ function App() {
                 </li>
               ))}
           </ul>
-        </aside>
+        </aside> */}
 
         {/* <Section data={data} /> */}
         <section className='projects-display'>

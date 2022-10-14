@@ -1,2 +1,2 @@
 # my-portfolio
-repo con mi página web donde pretendo aplicar todo lo aprendido hasta el momento
+Este es mi portfolio con proyectos y prácticas realizados en mi proceso de aprendizaje.

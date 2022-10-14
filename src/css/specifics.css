@@ -60,12 +60,6 @@ Variables
     --btn-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
-/*
-=============== 
-Global Styles
-===============
-*/
-
 *,
 ::after,
 ::before {
@@ -151,21 +145,28 @@ p {
     }
 }
 
-/*  global classes */
-
-/* @media screen and (min-width: 800px) {
-  .section {
-    width: 95vw;
-  }
-} */
-
+/* COMPONENTS: Header
+   -------------------------------------------------------------------------- */
 header {
-    height: 10vw;
+    height: 7rem;
     margin-bottom: 1rem;
     color: var(--clr-white);
     text-align: center;
 }
 
+header h1 {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+header p {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* COMPONENTS: Nav
+   -------------------------------------------------------------------------- */
 nav {
     text-align: center;
     position: fixed;
@@ -191,23 +192,20 @@ nav a {
     font-weight: 700;
 }
 
-header h1 {
-    max-width: 40rem;
-    margin: 0 auto;
-    padding-top: 6rem;
-}
-
-header p {
-    font-size: 2rem;
-    margin-top: 0;
-}
-
+/* COMPONENTS: Main
+   -------------------------------------------------------------------------- */
 main {
     display: flex;
     justify-content: space-around;
     min-width: 30rem;
 }
 
+.main-section__title {
+    margin-bottom: 2rem;
+}
+
+/* COMPONENTS: Intro
+   -------------------------------------------------------------------------- */
 .intro {
     position: relative;
 }
@@ -216,12 +214,13 @@ main {
     box-shadow: var(--bs);
 }
 
+/* COMPONENTS: Projects
+   -------------------------------------------------------------------------- */
 .projects-display {
     text-align: center;
     margin: 0 auto;
     flex: 5;
     max-width: var(--max-width);
-    /* border: 1px solid black; */
 }
 
 .projects {
@@ -229,9 +228,10 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    /* border: 1px solid black; */
 }
 
+/* COMPONENTS: Item
+   -------------------------------------------------------------------------- */
 .item {
     background: var(--clr-grey-9);
     color: var(--clr-primary-2);
@@ -263,14 +263,8 @@ main {
     margin-bottom: 1rem;
 }
 
-/* .item a {
-  background: transparent;
-  border-color: transparent;
-  color: var(--clr-primary-1);
-  letter-spacing: var(--spacing);
-  cursor: pointer;
-} */
-
+/* COMPONENTS: Aside
+   -------------------------------------------------------------------------- */
 aside {
     text-align: center;
     margin: 0 auto;
@@ -290,6 +284,8 @@ aside li {
     /* border: 1px solid green; */
 }
 
+/* COMPONENTS: Buttons
+   -------------------------------------------------------------------------- */
 .btn {
     display: inline-block;
     background: var(--clr-primary-4);
@@ -308,6 +304,7 @@ aside li {
     /* border: 1px solid rgb(255, 0, 200); */
 }
 
+
 .btn:hover {
     background: var(--clr-primary-5);
     /* color: var(--clr-primary-5); */
@@ -317,6 +314,8 @@ aside li {
     overflow: hidden;
 }
 
+/* COMPONENTS: Footer
+   -------------------------------------------------------------------------- */
 footer {
     background-color: var(--clr-grey-7);
     display: flex;
@@ -335,6 +334,3 @@ footer p {
     font-weight: 700;
 }
 
-.main-section__title {
-    margin-bottom: 2rem;
-}

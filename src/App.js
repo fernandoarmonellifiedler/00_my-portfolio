@@ -13,17 +13,13 @@ function App() {
                 <nav>
                     <ul className='nav-ul'>
                         <li>
-                            <a href='https://www.linkedin.com/in/fernando-armonelli-fiedler/'>
-                                Linkedin
-                            </a>
+                            <a href='https://www.linkedin.com/in/fernando-armonelli-fiedler/'>Linkedin</a>
                         </li>
                         <li>
                             <a href='https://github.com/fernandoarmonellifiedler'>Github</a>
                         </li>
                         <li>
-                            <a href='https://github.com/fernandoarmonellifiedler/personal-projects'>
-                                My projects Repo
-                            </a>
+                            <a href='https://github.com/fernandoarmonellifiedler/personal-projects'>My projects Repo</a>
                         </li>
                     </ul>
                 </nav>
